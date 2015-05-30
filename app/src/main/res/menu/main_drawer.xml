@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_item_1"
+            android:checked="true"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="@string/hello_world"/>
+        <item
+            android:id="@+id/drawer_item_2"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="@string/hello_world"/>
+        <item
+            android:id="@+id/drawer_item_3"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="@string/hello_world"/>
+        <item
+            android:id="@+id/drawer_item_4"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="@string/hello_world"/>
+        <item
+            android:id="@+id/drawer_item_5"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="@string/hello_world"/>
+    </group>
+</menu>
