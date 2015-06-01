@@ -16,6 +16,7 @@ import android.view.MenuItem;
 
 import net.imthinker.android.dslsample.R;
 import net.imthinker.android.dslsample.fragment.FirstFragment;
+import net.imthinker.android.dslsample.fragment.SecondFragment;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -94,6 +95,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Fragment fragment = null;
         if (id == R.id.drawer_item_1) {
             fragment = FirstFragment.newInstance();
+        } else if (id == R.id.drawer_item_2) {
+            fragment = SecondFragment.newInstance();
         }
 
         if (fragment != null) {
@@ -102,9 +105,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 .replace(R.id.main_frame, fragment)
                 .commit();
 
+            item.setChecked(true);
             mDrawerLayout.closeDrawers();
         }
 
-        return super.onOptionsItemSelected(item);
+        return false;
     }
 }
